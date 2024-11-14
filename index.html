@@ -1,180 +1,192 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>Widrick.net</title>
-		<link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;700&display=swap" rel="stylesheet">
-		<link href="style.css" rel="stylesheet">
-		<link href="/w-logo.svg" type="image/svg+xml" rel="icon">
-		<script src="/portfolio.js" type="module"></script>
-	</head>
-	<body id="app">
-		<div id="headerCont">
-			<div id="namePlate"><h1 id="nameText">Daniel Widrick</h1></div>
-			<div id="topNavCont">
-				<ul class="hNav">
-					<li class="hNav">
-						<a href="#Software" :class="{ 'selected' : displaySection === 'Software'}">
-							Software Developer
-						</a></li>
-					<li class="hNav">
-						<a href="#Systems" :class="{ 'selected' : displaySection === 'Systems'}">
-							System Administrator
-						</a></li>
-					<li class="hNav">
-						<a href="#Security" :class="{ 'selected' : displaySection === 'Security'}">
-							Cyber Security
-						</a></li>
-				</ul>
-			</div>
-		</div>
-		<div id="pageBodyCont">
-			<div id="leftBodyBar" class="bodyCol left">
-				<ul class="sideList">
-					<li>
-						<a href="https://widrick.net/">Widrick.net</a>
-					</li>
-					<li>
-						<a href="mailto:Daniel@Widrick.net">Daniel@widrick.net</a>
-					</li>
-					<li>
-						<a href="https://github.com/daniel-widrick">github.com/daniel-widrick</a>
-					</li>
-				</ul>
-				<hr />
-				<div id="education">
-					BS Computer Science - SUNY POLY 2012
-				</div>
-				<hr />
-			</div>
-			<div id="rightBodyBar" class="bodyCol right">
-				<div id="softwareRightCont" v-if="displaySection == 'Software'">
-					<div class="aboutMeBlurb">
-						I write simple software to solve complex problems.<br /><br />
-						At work you'll find me writing scripts and programs to integrate aerospace aware sensors with situational awareness interfaces. At home you'll find me writing control logic for medical grade pumps in an attempt to make the perfect mixed drink.
-					</div>
-					<div class="experienceBox">
-						<div class="experienceBoxCol left">2021 - Present</div>
-						<div class="experienceBoxCol right">
-							<h3>Senior Software Engineer - AX Enterprize</h3>
-							<div class="experienceBoxResp">
-							Build and support system integrations for airspace awareness in emerging Uncrewed Aerial Systems markets. Work closely with cross-functional teams including developers, pilots, infrastructure and security to provide robust and novel solutions to both commercial and government customers.
-							</div>
-						</div>
-						<div class="experienceBoxSkills">
-							<ul class="skillList hNav">
-								<li class="skillItem skillItemPython">Python</li>
-								<li class="skillItem skillItemRust">Rust</li>
-								<li class="skillItem skillItemJavascript">Javascript</li>
-								<li class="skillItem skillItemGo">Go</li>
-						</div>
-					</div>
-					<div class="experienceBox">
-						<div class="experienceBoxCol left">2016 - 2021</div>
-						<div class="experienceBoxCol right">
-							<h3>Lead Programmer / Analyst - SUNY Polytechnic Institute</h3>
-							<div class="experienceBoxResp">
-								Build and maintain software and reports in Ellucian Banner to facilitate academic success and student retention. Architect and maintain campus wide authentication systems and synchronizations. Provide data driven solutions to drive institutional planning.
-							</div>
-						</div>
-						<div class="experienceBoxSkills">
-							<ul class="skillList hNav">
-								<li class="skillItem skillItemPython">Python</li>
-								<li class="skillItem skillItemOracle">Oracle</li>
-								<li class="skillItem skillItemJava">Java</li>
-								<li class="skillItem skillItemCSharp">C#</li>
-							</ul>
-						</div>
-					</div>
-					<div class="experienceBox">
-						<div class="experienceBoxCol left">2010 - 2016</div>
-						<div class="experienceBoxCol right">
-							<h3>Web Developer - SUNY Polytechnic Institute</h3>
-							<div class="experienceBoxResp">
-								Oversee upgrade of legacy content management system between major versions of PHP and eventual migration to Wordpress. Main point of escalation for website related support requests. Manage web and database servers.	
-							</div>
-						</div>
-						<div class="experienceBoxSkills">
-							<ul class="skillList hNav">
-								<li class="skillItem skillItemPHP">PHP</li>
-								<li class="skillItem skillItemMySQL">MySQL</li>
-								<li class="skillItem skillItemWordpress">Wordpress</li>
-							</ul>
-						</div>
-					</div>
-				</div>
-				<div id="systemsRightCont" v-if="displaySection == 'Systems'">
-					<div class="aboutMeBlurb">
-						I hate printers, but I'm here to help.<br /><br />
-						I pride myself on unblocking users and developers with secure and sustainable yet flexible solutions. I've been deep in the world of compliance and I don't shy away from scripting and automation. Routers and firewalls don't scare me. It's the weekend rum and an excercise routine that keeps the stress at bay for me.
-					</div>
-					<div class="experienceBox">
-						<div class="experienceBoxCol left">2021-Present</div>
-						<div class="experienceBoxCol right">
-							<h3>DevSecOps Engineer</h3>
-							<div class="experienceBoxResp">
-								Architect stable and reproducible platforms for software deployment in a variety of compliance environments. Maintain security and stablity of deployed solutions. Oversee general organiztional monitoring, alerting, patching and compliance. Provide networked solutions through diverse secured customer networks.
-							</div>
-						</div>
-						<div class="experienceBoxSkills">
-							<ul class="skillList hNav">
-								<li class="skillItem skillItemWindows">Windows</li>
-								<li class="skillItem skillItemUbuntu">Ubuntu</li>
-								<li class="skillItem skillItemDocker">Docker</li>
-								<li class="skillItem skillItemKubernetes">Kubernetes</li>
-								<li class="skillitem skillItemBash">Bash</li>
-								<li class="skillItem skillItemCMMC">CMMC</li>
-							</ul>
-						</div>
-					</div>
-					<div class="experienceBox">
-						<div class="experienceBoxCol left">2012-2021</div>
-						<div class="experienceBoxCol right">
-							<h3>Lead Systems Administrator - SUNY Polytechnic Institute</h3>
-							<div class="experienceBoxResp">
-								Support and maintain Linux infrastructure for business and academic departments. Manage VMWare enviornment and NetApp Network file server. Architect solution for account/password sync across all college systems and maintain Single Sign On solution. Administer Google Email and oversee migration from Gsuite to Microsoft 365.
-							</div>
-						</div>
-					<div class="experienceBoxSkills">
-						<ul class="skillList hNav">
-							<li class="skillItem skillItemVMWare">VMWare</li>
-							<li class="skillItem skillItemCisco">Cisco</li>
-							<li class="skillItem skillItemOracleLinux">Oracle Linux</li>
-							<li class="skillItem skillItemFERPA">FERPA</li>
-							<li class="skillItem skillItemHIPAA">HIPAA</li>
-						</ul>
-					</div>
-				</div>
-			</div>
-			<div id="securityCont" v-if="displaySection == 'Security'">
-				<div class="aboutMeBlurb">
-					I've dabbled in the botnet scenes when I was young and foolish.<br />
-					Now I wear a blue team hat.<br /><br />
-					A need for security is pervasive in the modern digital landscape. I'm here to offer secure solutions that minimize risk but also don't stand in the way of progress or productivity. I've survived a few attacks and always come out the other side basically unharmed... Some nights, it can be hard to sleep while the enemy knocks at the door though.
-				</div>
-				<div class="experienceBox">
-					<div class="experienceBoxCol left">2021-present</div>
-					<div class="experienceBoxCol right">
-						<h3>DevSecOps Engineer - AX Enterprize</h3>
-						<div class="experienceBoxResp">
-							Lead CMMC and DFARS compliance initiatives and ensure secure configuration of product platforms and interal systems. Solution adviser for security related topics. Collaborate across teams and products to ensure secure product implementations. Guide internal risk mitigation decisions.
-						</div>
-						<div class="experienceBoxSkills">
-							<ul class="skillList hNav">
-								<li class="skillItem skillItemCMMC">CMMC</li>
-								<li class="skillItem skillItemNessus">Nesus</li>
-								<li class="skillItem skillItemBitDefender">Bit Defender</li>
-								<li class="skillItem skillItemAD">Active Directory</li>
-							</ul>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-	<hr />
-	<div id="footerCont">
-		Powered by Go and Vue... Some printers may have been harmed...
-	</div>
-	</body>
+<head>
+  <title>Widrick.net</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;700&amp;display=swap" rel="stylesheet">
+  <link href="style.css" rel="stylesheet">
+  <link href="/w-logo.svg" type="image/svg+xml" rel="icon">
+  <script src="/portfolio.js" type="module"></script>
+</head>
+<body id="app">
+  <div id="headerCont">
+    <div id="namePlate">
+      <h1 id="nameText">Daniel Widrick</h1>
+    </div>
+    <div id="topNavCont">
+      <ul class="hNav">
+        <li class="hNav">
+          <a href="#Software">Software Developer</a>
+        </li>
+        <li class="hNav">
+          <a href="#Systems">System Administrator</a>
+        </li>
+        <li class="hNav">
+          <a href="#Security">Cyber Security</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div id="pageBodyCont">
+    <div id="leftBodyBar" class="bodyCol left">
+      <ul class="sideList">
+        <li>
+          <a href="https://widrick.net/">Widrick.net</a>
+        </li>
+        <li>
+          <a href="mailto:Daniel@Widrick.net">Daniel@widrick.net</a>
+        </li>
+        <li>
+          <a href="https://github.com/daniel-widrick">github.com/daniel-widrick</a>
+        </li>
+      </ul>
+      <hr>
+      <div id="education">
+        BS Computer Science - SUNY POLY 2012
+      </div>
+      <hr>
+    </div>
+    <div id="rightBodyBar" class="bodyCol right">
+      <div id="softwareRightCont" v-if="displaySection == 'Software'">
+        <div class="aboutMeBlurb">
+          I write simple software to solve complex problems.<br>
+          <br>
+          At work, you'll find me writing scripts and programs to integrate aerospace-aware sensors with situational awareness interfaces. At home, you'll find me writing control logic for medical-grade pumps in an attempt to make the perfect mixed drink.
+        </div>
+        <div class="experienceBox">
+          <div class="experienceBoxCol left">
+            2021 - Present
+          </div>
+          <div class="experienceBoxCol right">
+            <h3>Senior Software Engineer - AX Enterprize</h3>
+            <div class="experienceBoxResp">
+              Build and support system integrations for airspace awareness in emerging Uncrewed Aerial Systems markets. Work closely with cross-functional teams including developers, pilots, infrastructure and security to provide robust and novel solutions to both commercial and government customers.
+            </div>
+          </div>
+          <div class="experienceBoxSkills">
+            <ul class="skillList hNav">
+              <li class="skillItem skillItemPython">Python</li>
+              <li class="skillItem skillItemRust">Rust</li>
+              <li class="skillItem skillItemJavascript">JavaScript</li>
+              <li class="skillItem skillItemGo">Go</li>
+            </ul>
+          </div>
+        </div>
+        <div class="experienceBox">
+          <div class="experienceBoxCol left">
+            2016 - 2021
+          </div>
+          <div class="experienceBoxCol right">
+            <h3>Lead Programmer / Analyst - SUNY Polytechnic Institute</h3>
+            <div class="experienceBoxResp">
+              Build and maintain software and reports in Ellucian Banner to facilitate academic success and student retention. Architect and maintain campus-wide authentication systems and synchronizations. Provide data-driven solutions to drive institutional planning.
+            </div>
+          </div>
+          <div class="experienceBoxSkills">
+            <ul class="skillList hNav">
+              <li class="skillItem skillItemPython">Python</li>
+              <li class="skillItem skillItemOracle">Oracle</li>
+              <li class="skillItem skillItemJava">Java</li>
+              <li class="skillItem skillItemCSharp">C#</li>
+            </ul>
+          </div>
+        </div>
+        <div class="experienceBox">
+          <div class="experienceBoxCol left">
+            2010 - 2016
+          </div>
+          <div class="experienceBoxCol right">
+            <h3>Web Developer - SUNY Polytechnic Institute</h3>
+            <div class="experienceBoxResp">
+              Oversee upgrade of legacy content management system between major versions of PHP and eventual migration to WordPress. Served as main point of escalation for website related support requests. Manage web and database servers.
+            </div>
+          </div>
+          <div class="experienceBoxSkills">
+            <ul class="skillList hNav">
+              <li class="skillItem skillItemPHP">PHP</li>
+              <li class="skillItem skillItemMySQL">MySQL</li>
+              <li class="skillItem skillItemWordpress">WordPress</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div id="systemsRightCont" v-if="displaySection == 'Systems'">
+        <div class="aboutMeBlurb">
+          I hate printers, but I'm here to help.<br>
+          <br>
+          I pride myself on unblocking users and developers with secure and sustainable yet flexible solutions. I've been deep in the world of compliance, and I don't shy away from scripting and automation. Routers and firewalls don't scare me. It's the weekend rum and an exercise routine that keeps the stress at bay for me.
+        </div>
+        <div class="experienceBox">
+          <div class="experienceBoxCol left">
+            2021-present
+          </div>
+          <div class="experienceBoxCol right">
+            <h3>DevSecOps Engineer - AX Enterprize</h3>
+            <div class="experienceBoxResp">
+              Architect stable and reproducible platforms for software deployment in a variety of compliance environments. Maintain security and stabillity of deployed solutions. Oversee general organizational monitoring, alerting, patching, and compliance. Provide networked solutions through diverse secured customer networks.
+            </div>
+          </div>
+          <div class="experienceBoxSkills">
+            <ul class="skillList hNav">
+              <li class="skillItem skillItemWindows">Windows</li>
+              <li class="skillItem skillItemUbuntu">Ubuntu</li>
+              <li class="skillItem skillItemDocker">Docker</li>
+              <li class="skillItem skillItemKubernetes">Kubernetes</li>
+              <li class="skillItem skillItemCMMC">CMMC</li>
+            </ul>
+          </div>
+        </div>
+        <div class="experienceBox">
+          <div class="experienceBoxCol left">
+            2012-2021
+          </div>
+          <div class="experienceBoxCol right">
+            <h3>Lead Systems Administrator - SUNY Polytechnic Institute</h3>
+            <div class="experienceBoxResp">
+              Support and maintain Linux infrastructure for business and academic departments. Manage VMWare enviornment and NetApp Network file server. Architect solution for account/password sync across all college systems and maintain Single Sign On solution. Administer Google Email and oversee migration from G Suite to Microsoft 365.
+            </div>
+          </div>
+          <div class="experienceBoxSkills">
+            <ul class="skillList hNav">
+              <li class="skillItem skillItemVMWare">VMware</li>
+              <li class="skillItem skillItemCisco">Cisco</li>
+              <li class="skillItem skillItemOracleLinux">Oracle Linux</li>
+              <li class="skillItem skillItemFERPA">FERPA</li>
+              <li class="skillItem skillItemHIPAA">HIPAA</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div id="securityCont" v-if="displaySection == 'Security'">
+        <div class="aboutMeBlurb">
+          I've dabbled in the botnet scene when I was young and foolish. Now I wear a blue team hat.<br>
+          <br>
+          The need for security is pervasive in the modern digital landscape. I'm here to offer secure solutions that minimize risk but also don't stand in the way of progress or productivity. I've survived a few attacks and always come out the other side basically unharmed... Some nights, it can be hard to sleep while the enemy knocks at the door.
+        </div>
+        <div class="experienceBox">
+          <div class="experienceBoxCol left">
+            2021-present
+          </div>
+          <div class="experienceBoxCol right">
+            <h3>DevSecOps Engineer - AX Enterprize</h3>
+            <div class="experienceBoxResp">
+              Lead CMMC and DFARS compliance initiatives and ensure secure configuration of product platforms and internal systems. Solution adviser for security-related-topics. Collaborate across teams and products to ensure secure product implementations. Guide internal risk mitigation decisions.
+            </div>
+            <div class="experienceBoxSkills">
+              <ul class="skillList hNav">
+                <li class="skillItem skillItemCMMC">CMMC</li>
+                <li class="skillItem skillItemNessus">Nessus</li>
+                <li class="skillItem skillItemBitDefender">Bit Defender</li>
+                <li class="skillItem skillItemAD">Active Directory</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <hr>
+  <div id="footerCont">
+    Powered by Go and Vue... Some printers may have been harmed...
+  </div>
+</body>
 </html>

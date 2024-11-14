@@ -1,140 +1,186 @@
-body {
-	background-color: #1b2326;
-	color: #d1d7db;
-	/* font-family: Copperplate, "Copperplate Gothic Light", fantlsasy; */
-	font-family: 'Inconsolata', monospace; 
-	font-size: 18px;
-}
-h1 {
-	color: #ff4f00;
-}
-a {
-	color: #00e5ff;
-	text-decoration: none;
-}
-a:hover, a:active, a.selected {
-	color: #39ff14;
-	text-decoration: underline;
-}
-
-#headerCont{
-	text-align: center;
-}
-#namePlate {
-	font-size: 32px;
-}
-#topNavCont {
-	color: #00e5ff;
-}
-.hNav {
-	list-style-type: none;
-	display: flex;
-	justify-content: center;
-	padding: 0;
-	margin: 0;
-}
-.sideList {
-	list-style: none;
-	font-size: 16px;
-	padding: 0;
-	margin: 0;
-}
-.sideList li {
-	margin-bottom: 5px;
-}
-#topNavCont .hNav li {
-	margin: 0 15px;
-	font-size: 24px;
-}
-.skillItem {
-	margin: 0 15px;
-}
-.skillItemPython {
-	color: #77aa77;
-}
-.skillItemRust {
-	color: #b75c3d;
-}
-.skillItemJavascript {
-	color: #d15b99;
-}
-.skillItemGo {
-	color: #66a7b3;
-}
-.skillItemOracle {
-	color: #e14c4c;
-}
-.skillItemJava{
-	color: #d17a3b;
-}
-.skillItemCSharp {
-	color: #9a5c8f;
-}
-.skillItemPHP{
-	color: #7f5fa5;
-}
-.skillItemMySQL{
-	color: #7a8b8f;
-}
-.skillItemWordpress {
-	color: #5a8fb6;
-}
-#topNavCont .hnav li:hover {
-	color: #39ff14;
-	cursor: pointer;
-}
-h1 {
-	margin: 11px;
-}
-h2, h3, h4, h5, h6 {
-	margin: 0px;
-}
-#pageBodyCont {
-	display: flex;
-	margin-top: 30px;
-	margin-left: 0px;
-}
-.bodyCol {
-	padding: 6px;
+* {
 	box-sizing: border-box;
 }
+body {
+background-color:#1b2326;
+color:#d1d7db;
+/* font-family: Copperplate, "Copperplate Gothic Light", fantlsasy; */
+font-family:Inconsolata, monospace;
+font-size:18px;
+max-width: 100vw;
+}
+
+h1 {
+color:#ff4f00;
+}
+
+a {
+color:#00e5ff;
+text-decoration:none;
+}
+
+a:hover,a:active,a.selected {
+color:#39ff14;
+text-decoration:underline;
+}
+
+#headerCont {
+text-align:center;
+
+}
+
+#namePlate {
+font-size:32px;
+}
+
+#topNavCont {
+color:#00e5ff;
+}
+
+.hNav {
+list-style-type:none;
+display:flex;
+justify-content:center;
+padding:0;
+margin:0;
+}
+
+.sideList {
+list-style:none;
+font-size:16px;
+padding:0;
+margin:0;
+}
+
+.sideList li {
+margin-bottom:5px;
+}
+
+#topNavCont .hNav li {
+margin:0 15px;
+font-size:24px;
+}
+.skillList {
+	display: flex;
+	flex-wrap: wrap;
+}
+.skillItem {
+margin:5px 10px;
+display: inline-block;
+border: 1px solid;
+padding: 2px;
+}
+
+.skillItemPython {
+color:#7A7;
+}
+
+.skillItemRust {
+color:#b75c3d;
+}
+
+.skillItemJavascript {
+color:#d15b99;
+}
+
+.skillItemGo {
+color:#66a7b3;
+}
+
+.skillItemOracle {
+color:#e14c4c;
+}
+
+.skillItemJava {
+color:#d17a3b;
+}
+
+.skillItemCSharp {
+color:#9a5c8f;
+}
+
+.skillItemPHP {
+color:#7f5fa5;
+}
+
+.skillItemMySQL {
+color:#7a8b8f;
+}
+
+.skillItemWordpress {
+color:#5a8fb6;
+}
+
+#topNavCont .hnav li:hover {
+color:#39ff14;
+cursor:pointer;
+}
+
+h1 {
+margin:11px;
+}
+
+h2,h3,h4,h5,h6 {
+margin:0;
+}
+
+#pageBodyCont {
+display:flex;
+margin-top:30px;
+margin-left:0;
+}
+
+.bodyCol {
+padding:6px;
+box-sizing:border-box;
+}
+
 .bodyCol.left {
-	flex: 0 0 30%;
+flex:0 0 30%;
 }
+
 .bodyCol.right {
-	flex: 1;
+flex:1;
 }
+
 .aboutMeBlurb {
-	padding: 13px;
-	border: 1px solid #353535;
+padding:13px;
+border:1px solid #353535;
 }
+
 #footerCont {
-	color: #9fa7ad;
-	text-align: center;
+color:#9fa7ad;
+text-align:center;
 }
 
 .experienceBox {
-	/* display: flex */
-	margin: 20px;
-	border: 2px solid #353535;
-	box-sizing: border-box;
-	padding: 5px;
+/* display: flex */
+margin:20px;
+border:2px solid #353535;
+box-sizing:border-box;
+padding:5px;
+max-width:100%;
 }
+
 .experienceBoxCol.left {
-	flex: 0 0 25%;
+flex:0 0 25%;
 }
+
 .experienceBoxCol.right {
-	flex: 1
+flex:1;
 }
+
 .experienceBoxResp {
-	margin-top: 5px;
-	font-size: 16px;
+margin-top:5px;
+font-size:16px;
 }
+
 .experienceBox h3 {
-	color: #6a7d3b;
+color:#6a7d3b;
 }
+
 #education {
-	font-size: 14px;
-	color: #8a9d5b;
-	font-weight: bold;
+font-size:14px;
+color:#8a9d5b;
+font-weight:700;
 }
