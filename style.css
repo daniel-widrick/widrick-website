@@ -185,3 +185,21 @@ font-size:14px;
 color:#8a9d5b;
 font-weight:700;
 }
+.onlyPrint {
+	display: none;
+}
+
+@media print {
+	body {
+		color: #000;
+	}
+	.no-print {
+		display: none;
+	}
+	.onlyPrint {
+		display: inline-block;
+	}
+	a {
+		color: #000088;
+	}
+}

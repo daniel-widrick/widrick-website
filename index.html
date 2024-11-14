@@ -13,7 +13,7 @@
     <div id="namePlate">
       <h1 id="nameText">Daniel Widrick</h1>
     </div>
-    <div id="topNavCont">
+    <div id="topNavCont" class="no-print">
       <ul class="hNav">
         <li class="hNav">
           <a href="/portfolio/software" :class="{ 'selected' : displaySection === 'software'}">Software Developer</a>
@@ -39,6 +39,13 @@
         <li>
           <a href="https://github.com/daniel-widrick">github.com/daniel-widrick</a>
         </li>
+		  <li>
+			  <span class="onlyPrint">315</span>
+			  <span style="display: none;">324</span>
+			  <span class="onlyPrint">-527</span>
+			  <span style="display: none;">522</span>
+			  <span class="onlyPrint">-2825</span>
+			</li>
       </ul>
       <hr>
       <div id="education">
@@ -77,7 +84,7 @@
             2016 - 2021
           </div>
           <div class="experienceBoxCol right">
-            <h3>Lead Programmer / Analyst - SUNY Polytechnic Institute</h3>
+				 <h3>Lead Programmer / Analyst - SUNY Poly<span class="no-print">technic Institute</span></h3>
             <div class="experienceBoxResp">
               Build and maintain software and reports in Ellucian Banner to facilitate academic success and student retention. Architect and maintain campus-wide authentication systems and synchronizations. Provide data-driven solutions to drive institutional planning.
             </div>
@@ -96,7 +103,7 @@
             2010 - 2016
           </div>
           <div class="experienceBoxCol right">
-            <h3>Web Developer - SUNY Polytechnic Institute</h3>
+				 <h3>Web Developer - SUNY Poly<span class="no-print">technic Institute</span></h3>
             <div class="experienceBoxResp">
               Oversee upgrade of legacy content management system between major versions of PHP and eventual migration to WordPress. Served as main point of escalation for website related support requests. Manage web and database servers.
             </div>
@@ -141,7 +148,7 @@
             2012-2021
           </div>
           <div class="experienceBoxCol right">
-            <h3>Lead Systems Administrator - SUNY Polytechnic Institute</h3>
+				 <h3>Lead System Administrator - SUNY Poly<span class="no-print">technic Institute</span></h3>
             <div class="experienceBoxResp">
               Support and maintain Linux infrastructure for business and academic departments. Manage VMWare enviornment and NetApp Network file server. Architect solution for account/password sync across all college systems and maintain Single Sign On solution. Administer Google Email and oversee migration from G Suite to Microsoft 365.
             </div>
@@ -159,7 +166,7 @@
       </div>
       <div id="securityCont" v-if="displaySection == 'security'">
         <div class="aboutMeBlurb">
-          I've dabbled in the botnet scene when I was young and foolish. Now I wear a blue team hat.<br>
+          I dabbled in the botnet scene when I was young and foolish. Now I wear a blue team hat.<br>
           <br>
           The need for security is pervasive in the modern digital landscape. I'm here to offer secure solutions that minimize risk but also don't stand in the way of progress or productivity. I've survived a few attacks and always come out the other side basically unharmed... Some nights, it can be hard to sleep while the enemy knocks at the door.
         </div>
@@ -185,8 +192,8 @@
       </div>
     </div>
   </div>
-  <hr>
-  <div id="footerCont">
+  <hr class="no-print">
+  <div id="footerCont" class="no-print">
     Powered by Go and Vue... Some printers may have been harmed...
   </div>
 </body>
