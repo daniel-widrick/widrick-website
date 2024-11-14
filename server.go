@@ -20,7 +20,7 @@ func main(){
 		case "portfolio/security":
 			filePath = "./index.html"
 		}
-		log.Printf("%s  :: Serving file: %s\n",r.RemoteAddr,filePath)
+		log.Printf("%s  :: Serving file: %s (%s)\n",r.RemoteAddr,filePath, r.URL.Path)
 		http.ServeFile(w, r, filePath)
 	})
 
