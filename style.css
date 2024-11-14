@@ -179,6 +179,12 @@ font-size:16px;
 .experienceBox h3 {
 color:#6a7d3b;
 }
+.sideLogo {
+	width: 100px;
+	position: relative;
+	top: -20px;
+	margin-left: 15px;
+}
 
 #education {
 font-size:14px;
