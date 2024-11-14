@@ -1,0 +1,8 @@
+services:
+  portfolio:
+    ports:
+      - "6780:6780"
+    container_name: widrick_portfolio
+    build:
+      context: .
+    restart: always
