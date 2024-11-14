@@ -2,10 +2,11 @@
 <html lang="en">
 <head>
   <title>Widrick.net</title>
+  	<meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;700&amp;display=swap" rel="stylesheet">
-  <link href="style.css" rel="stylesheet">
-  <link href="/w-logo.svg" type="image/svg+xml" rel="icon">
+  <link href="/style.css" rel="stylesheet">
   <script src="/portfolio.js" type="module"></script>
+  <link href="/w-logo.svg" type="image/svg+xml" rel="icon">
 </head>
 <body id="app">
   <div id="headerCont">
@@ -15,13 +16,13 @@
     <div id="topNavCont">
       <ul class="hNav">
         <li class="hNav">
-          <a href="#Software">Software Developer</a>
+          <a href="/portfolio/software">Software Developer</a>
         </li>
         <li class="hNav">
-          <a href="#Systems">System Administrator</a>
+          <a href="/portfolio/systems">System Administrator</a>
         </li>
         <li class="hNav">
-          <a href="#Security">Cyber Security</a>
+          <a href="/portfolio/security">Cyber Security</a>
         </li>
       </ul>
     </div>
@@ -46,7 +47,7 @@
       <hr>
     </div>
     <div id="rightBodyBar" class="bodyCol right">
-      <div id="softwareRightCont" v-if="displaySection == 'Software'">
+      <div id="softwareRightCont" v-if="displaySection == 'software'">
         <div class="aboutMeBlurb">
           I write simple software to solve complex problems.<br>
           <br>
@@ -109,7 +110,7 @@
           </div>
         </div>
       </div>
-      <div id="systemsRightCont" v-if="displaySection == 'Systems'">
+      <div id="systemsRightCont" v-if="displaySection == 'systems'">
         <div class="aboutMeBlurb">
           I hate printers, but I'm here to help.<br>
           <br>
@@ -156,7 +157,7 @@
           </div>
         </div>
       </div>
-      <div id="securityCont" v-if="displaySection == 'Security'">
+      <div id="securityCont" v-if="displaySection == 'security'">
         <div class="aboutMeBlurb">
           I've dabbled in the botnet scene when I was young and foolish. Now I wear a blue team hat.<br>
           <br>

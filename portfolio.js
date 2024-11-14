@@ -2,13 +2,14 @@ import { createApp, ref, onMounted, onUnmounted } from 'https://unpkg.com/vue@3/
 
 createApp({
 	setup() {
-		const displaySection = ref('Software')
+		const displaySection = ref('software')
 		
 		function updateSection(){
-			displaySection.value = window.location.hash.replace("#","") || "Software"
+			const path = window.location.pathname;
+			const section = path.split('/').pop();
+			displaySection.value = section || 'software'
 		}
 
-		window.addEventListener("hashchange", updateSection);
 		updateSection()
 		return {
 			displaySection, updateSection
