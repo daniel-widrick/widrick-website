@@ -1,7 +1,6 @@
 package main
 
 import (
-	"fmt"
 	"log"
 	"net/http"
 	"path/filepath"
@@ -13,7 +12,6 @@ func main(){
 	mux := http.NewServeMux()
 	mux.HandleFunc("/", func(w http.ResponseWriter, r * http.Request){
 		filePath := filepath.Join("./",r.URL.Path)
-		fmt.Println("FilePath:",filePath)
 		switch strings.TrimPrefix(filePath,"/") {
 		case "portfolio/software":
 			filePath = "./index.html"

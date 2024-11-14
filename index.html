@@ -16,13 +16,13 @@
     <div id="topNavCont">
       <ul class="hNav">
         <li class="hNav">
-          <a href="/portfolio/software">Software Developer</a>
+          <a href="/portfolio/software" :class="{ 'selected' : displaySection === 'software'}">Software Developer</a>
         </li>
         <li class="hNav">
-          <a href="/portfolio/systems">System Administrator</a>
+          <a href="/portfolio/systems" :class="{ 'selected' : displaySection === 'systems'}">System Administrator</a>
         </li>
         <li class="hNav">
-          <a href="/portfolio/security">Cyber Security</a>
+          <a href="/portfolio/security" :class="{ 'selected' : displaySection === 'security'}">Cyber Security</a>
         </li>
       </ul>
     </div>
