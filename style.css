@@ -112,6 +112,37 @@ color:#7a8b8f;
 color:#5a8fb6;
 }
 
+.skillItemWindows {
+	color:#0078d7;
+}
+.skillItemLinux {
+	color:#32CD32;
+}
+.skillItemDocker {
+	color: #008080;
+}
+.skillItemKubernetes {
+	color: #00AEEF;
+}
+.skillItemCMMC {
+	color: #FF6F3C;
+}
+.skillItemVMWare {
+	color: #0091D1;
+}
+.skillItemCisco {
+	color: #1BA0D7;
+}
+.skillItemOracleLinux {
+	color: #F80000;
+}
+.skillItemFERPA {
+	color: #DAA520;
+}
+.skillItemHIPAA {
+	color: #0073CF;
+}
+
 #topNavCont .hnav li:hover {
 color:#39ff14;
 cursor:pointer;
