@@ -1,0 +1,68 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - heading "Daniel Widrick" [level=1] [ref=e4]
+    - list [ref=e6]:
+      - listitem [ref=e7]:
+        - link "Software Developer" [ref=e8] [cursor=pointer]:
+          - /url: /portfolio/software
+      - listitem [ref=e9]:
+        - link "System Administrator" [ref=e10] [cursor=pointer]:
+          - /url: /portfolio/systems
+      - listitem [ref=e11]:
+        - link "Cyber Security" [ref=e12] [cursor=pointer]:
+          - /url: /portfolio/security
+  - generic [ref=e13]:
+    - generic [ref=e14]:
+      - img [ref=e16]
+      - list [ref=e17]:
+        - listitem [ref=e18]:
+          - link "Widrick.net" [ref=e19] [cursor=pointer]:
+            - /url: https://widrick.net/
+        - listitem [ref=e20]:
+          - link "Daniel@widrick.net" [ref=e21] [cursor=pointer]:
+            - /url: mailto:Daniel@Widrick.net
+        - listitem [ref=e22]:
+          - link "github.com/daniel-widrick" [ref=e23] [cursor=pointer]:
+            - /url: https://github.com/daniel-widrick
+        - listitem
+      - separator [ref=e24]
+      - generic [ref=e25]: BS Computer Science - SUNY POLY 2012
+      - separator [ref=e26]
+    - generic [ref=e28]:
+      - generic [ref=e29]:
+        - text: I write simple software to solve complex problems.
+        - text: At work, you'll find me writing scripts and programs to integrate aerospace-aware sensors with situational awareness interfaces. At home, you'll find me writing control logic for medical-grade pumps in an attempt to make the perfect mixed drink.
+      - generic [ref=e30]:
+        - generic [ref=e31]: 2021 - Present
+        - generic [ref=e32]:
+          - heading "Senior Software Engineer - AX Enterprize" [level=3] [ref=e33]
+          - generic [ref=e34]: Senior engineer on SAFIRE/CLUE, a real-time airspace-awareness platform for DoD and commercial UAS markets. Led an Entra ID OIDC SSO migration in Go, designed a compressed columnar track-storage format with versioned decoders, and built hot/cold archival across PostgreSQL and S3. Shipped a full feature set — sensor-ingest allowlists, role-based share links, data tagging, telemetry import — for a NY State Police RFP pursuit.
+        - list [ref=e36]:
+          - listitem [ref=e37]: Python
+          - listitem [ref=e38]: Rust
+          - listitem [ref=e39]: JavaScript
+          - listitem [ref=e40]: Go
+          - listitem [ref=e41]: Kubernetes
+          - listitem [ref=e42]: PostgreSQL
+          - listitem [ref=e43]: Angular
+      - generic [ref=e44]:
+        - generic [ref=e45]: 2016 - 2021
+        - generic [ref=e46]:
+          - heading "Lead Programmer / Analyst - SUNY Polytechnic Institute" [level=3] [ref=e47]
+          - generic [ref=e48]: Build and maintain software and reports in Ellucian Banner to facilitate academic success and student retention. Architect and maintain campus-wide authentication systems and synchronizations. Provide data-driven solutions to drive institutional planning.
+        - list [ref=e50]:
+          - listitem [ref=e51]: Python
+          - listitem [ref=e52]: Oracle
+          - listitem [ref=e53]: Java
+          - listitem [ref=e54]: C#
+      - generic [ref=e55]:
+        - generic [ref=e56]: 2010 - 2016
+        - generic [ref=e57]:
+          - heading "Web Developer - SUNY Polytechnic Institute" [level=3] [ref=e58]
+          - generic [ref=e59]: Oversee upgrade of legacy content management system between major versions of PHP and eventual migration to WordPress. Served as main point of escalation for website related support requests. Manage web and database servers.
+        - list [ref=e61]:
+          - listitem [ref=e62]: PHP
+          - listitem [ref=e63]: MySQL
+          - listitem [ref=e64]: WordPress
+  - separator [ref=e65]
+  - generic [ref=e66]: Powered by Go and Vue... Some printers may have been harmed...
