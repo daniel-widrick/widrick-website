@@ -55,6 +55,19 @@
           BS Computer Science - SUNY POLY 2012
         </div>
         <hr>
+        <div id="domains">
+          <span class="clearanceHead">Domains</span><br>
+          Defense &middot; Homeland Security<br>
+          UAS / UTM &middot; Airspace Awareness
+        </div>
+        <hr>
+        <div id="clearance">
+          <span class="clearanceHead">Clearances</span><br>
+          U.S. Citizen<br>
+          Active Secret &middot; DoD<br>
+          Public Trust &middot; DHS
+        </div>
+        <hr>
       </div>
       <div id="rightBodyBar" class="bodyCol right">
         <div id="softwareRightCont" v-if="displaySection == 'software'">
@@ -72,7 +85,7 @@
                 Senior Software Engineer - AX Enterprize
               </h3>
               <div class="experienceBoxResp">
-                Build and support system integrations for airspace awareness in emerging Uncrewed Aerial Systems markets. Work closely with cross-functional teams including developers, pilots, infrastructure and security to provide robust and novel solutions to both commercial and government customers.
+                Senior engineer on SAFIRE/CLUE, a real-time airspace-awareness platform integrating aerospace sensors for DoD and commercial UAS markets. Built core capabilities across its Go services, including authentication and SSO, the track storage and replay pipeline, and hot/cold data archival. Also wrote the supporting tooling in Go and Python: a packet-fanout router for sensor feeds, UTM and kinematic track simulators for testing, and an offline terrain and imagery mapping engine for air-gapped deployments.
               </div>
             </div>
             <div class="experienceBoxSkills">
@@ -84,6 +97,10 @@
                 <li class="skillItem skillItemJavascript">JavaScript
                 </li>
                 <li class="skillItem skillItemGo">Go
+                </li>
+                <li class="skillItem skillItemKubernetes">Kubernetes
+                </li>
+                <li class="skillItem skillItemPostgreSQL">PostgreSQL
                 </li>
               </ul>
             </div>
@@ -97,7 +114,7 @@
                 Lead Programmer / Analyst - SUNY Poly<span class="no-print">technic Institute</span>
               </h3>
               <div class="experienceBoxResp">
-                Build and maintain software and reports in Ellucian Banner to facilitate academic success and student retention. Architect and maintain campus-wide authentication systems and synchronizations. Provide data-driven solutions to drive institutional planning.
+                Built and maintained software and reports in Ellucian Banner to facilitate academic success and student retention. Architected and maintained campus-wide authentication systems and synchronizations. Provided data-driven solutions to drive institutional planning.
               </div>
             </div>
             <div class="experienceBoxSkills">
@@ -122,7 +139,7 @@
                 Web Developer - SUNY Poly<span class="no-print">technic Institute</span>
               </h3>
               <div class="experienceBoxResp">
-                Oversee upgrade of legacy content management system between major versions of PHP and eventual migration to WordPress. Served as main point of escalation for website related support requests. Manage web and database servers.
+                Oversaw upgrade of legacy content management system between major versions of PHP and eventual migration to WordPress. Served as main point of escalation for website related support requests. Managed web and database servers.
               </div>
             </div>
             <div class="experienceBoxSkills">
@@ -152,18 +169,22 @@
                 DevSecOps Engineer - AX Enterprize
               </h3>
               <div class="experienceBoxResp">
-                Architect stable and reproducible platforms for software deployment in a variety of compliance environments. Maintain security and stabillity of deployed solutions. Oversee general organizational monitoring, alerting, patching, and compliance. Provide networked solutions through diverse secured customer networks.
+                Administered the company's internal development and corporate IT environment, including GitHub Enterprise, Harbor and Maven artifact registries, Entra ID identity, Microsoft 365, and Cisco networking. Handled user lifecycle and access control, endpoint patching, monitoring, backups, and day-to-day support for business and engineering teams across on-prem and cloud infrastructure. Also maintained the build, release, and deployment automation that moves software from developers to fielded sites.
               </div>
             </div>
             <div class="experienceBoxSkills">
               <ul class="skillList hNav">
-                <li class="skillItem skillItemWindows">Windows
+                <li class="skillItem skillItemEntra">Entra ID
                 </li>
-                <li class="skillItem skillItemLinux">Linux
+                <li class="skillItem skillItemM365">M365
+                </li>
+                <li class="skillItem skillItemCisco">Cisco
                 </li>
                 <li class="skillItem skillItemDocker">Docker
                 </li>
                 <li class="skillItem skillItemKubernetes">Kubernetes
+                </li>
+                <li class="skillItem skillItemCICD">CI/CD
                 </li>
                 <li class="skillItem skillItemCMMC">CMMC
                 </li>
@@ -179,7 +200,7 @@
                 Lead System Administrator - SUNY Poly<span class="no-print">technic Institute</span>
               </h3>
               <div class="experienceBoxResp">
-                Support and maintain Linux infrastructure for business and academic departments. Manage VMWare enviornment and NetApp Network file server. Architect solution for account/password sync across all college systems and maintain Single Sign On solution. Administer Google Email and oversee migration from G Suite to Microsoft 365.
+                Supported and maintained Linux infrastructure for business and academic departments. Managed VMware environment and NetApp network file server. Architected solution for account/password sync across all college systems and maintained Single Sign On solution. Administered Google email and oversaw migration from G Suite to Microsoft 365.
               </div>
             </div>
             <div class="experienceBoxSkills">
@@ -213,7 +234,7 @@
                 DevSecOps Engineer - AX Enterprize
               </h3>
               <div class="experienceBoxResp">
-                Lead CMMC and DFARS compliance initiatives and ensure secure configuration of product platforms and internal systems. Solution adviser for security-related-topics. Collaborate across teams and products to ensure secure product implementations. Guide internal risk mitigation decisions.
+                Owned the security posture of the product line and the internal development pipeline. Maintained a secure software CI/CD pipeline with scanning integrated throughout, triaging and remediating findings from Nessus, Snyk, OSCAP, and other tools across source, containers, and deployed systems. Designed the authentication and identity model, and led CMMC and DFARS compliance, including STIG-hardened deployments and the POA&amp;M/ATO documentation behind fielded systems.
               </div>
               <div class="experienceBoxSkills">
                 <ul class="skillList hNav">
@@ -221,9 +242,40 @@
                   </li>
                   <li class="skillItem skillItemNessus">Nessus
                   </li>
-                  <li class="skillItem skillItemBitDefender">Bit Defender
+                  <li class="skillItem skillItemEntra">Entra ID
+                  </li>
+                  <li class="skillItem skillItemOSCAP">OSCAP/STIG
+                  </li>
+                  <li class="skillItem skillItemCICD">CI/CD
+                  </li>
+                  <li class="skillItem skillItemDFARS">DFARS
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="experienceBox">
+            <div class="experienceBoxCol left">
+              2012-2021
+            </div>
+            <div class="experienceBoxCol right">
+              <h3>
+                Lead System Administrator - SUNY Poly<span class="no-print">technic Institute</span>
+              </h3>
+              <div class="experienceBoxResp">
+                Sole owner of central authentication for the entire university, where every student, faculty, and staff login flowed through one identity. Built and ran the account and password synchronization and Single Sign On that thousands of users relied on daily. Conducted security audits, hardened and maintained secure servers across academic and business systems, and kept FERPA- and HIPAA-protected data secure.
+              </div>
+              <div class="experienceBoxSkills">
+                <ul class="skillList hNav">
+                  <li class="skillItem skillItemSSO">Single Sign On
                   </li>
                   <li class="skillItem skillItemAD">Active Directory
+                  </li>
+                  <li class="skillItem skillItemLinux">Linux
+                  </li>
+                  <li class="skillItem skillItemFERPA">FERPA
+                  </li>
+                  <li class="skillItem skillItemHIPAA">HIPAA
                   </li>
                 </ul>
               </div>

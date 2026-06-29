@@ -142,6 +142,39 @@ color:#5a8fb6;
 .skillItemHIPAA {
 	color: #0073CF;
 }
+.skillItemPostgreSQL {
+	color: #5a92c2;
+}
+.skillItemProxmox {
+	color: #E57000;
+}
+.skillItemHelm {
+	color: #4a7fd6;
+}
+.skillItemWireGuard {
+	color: #c45a58;
+}
+.skillItemOSCAP {
+	color: #4cb398;
+}
+.skillItemDFARS {
+	color: #d8923f;
+}
+.skillItemCICD {
+	color: #4d9fff;
+}
+.skillItemEntra {
+	color: #36b3a8;
+}
+.skillItemM365 {
+	color: #e8602c;
+}
+.skillItemSSO {
+	color: #b07fd6;
+}
+.skillItemNessus {
+	color: #4a78c0;
+}
 
 #topNavCont .hnav li:hover {
 color:#39ff14;
@@ -217,10 +250,13 @@ color:#6a7d3b;
 	margin-left: 15px;
 }
 
-#education {
+#education, #clearance, #domains {
 font-size:14px;
 color:#8a9d5b;
 font-weight:700;
+}
+.clearanceHead {
+color:#ff4f00;
 }
 .onlyPrint {
 	display: none;
