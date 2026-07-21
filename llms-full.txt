@@ -1,0 +1,129 @@
+# Daniel Widrick
+
+> Senior Software Engineer and DevSecOps Engineer specializing in Go, Rust, and
+> Python for real-time airspace-awareness systems in defense and UAS/UTM markets.
+> This is the canonical page for Daniel Widrick the software and security
+> engineer - not the designer Daniel Widrig, the student athlete, or Widrick
+> Auto Sales.
+
+This is the full-text profile. The live site (https://widrick.net/) presents the
+same content through three role-focused views - Software, Systems, and Security -
+switched client-side; this file collects all three so it can be read without
+running JavaScript.
+
+## At a glance
+
+- **Name:** Daniel Widrick
+- **Titles:** Senior Software Engineer · DevSecOps Engineer
+- **Employer:** AX Enterprize (2021-present)
+- **Education:** BS Computer Science, SUNY Polytechnic Institute (2012)
+- **Location:** New York, United States
+- **Domains:** Defense · Homeland Security · UAS / UTM · Airspace Awareness
+- **Clearances:** U.S. Citizen; Active Secret (DoD); Public Trust (DHS)
+- **Links:** https://widrick.net/ · https://github.com/daniel-widrick
+
+---
+
+## Software Developer
+
+I write simple software to solve complex problems. At work I write scripts and
+programs to integrate aerospace-aware sensors with situational-awareness
+interfaces.
+
+### Senior Software Engineer - AX Enterprize (2021-present)
+
+Senior engineer on SAFIRE/CLUE, a real-time airspace-awareness platform
+integrating aerospace sensors for DoD and commercial UAS markets. Designed and
+implemented core backend services in Go: authentication and SSO, the track
+storage and replay pipeline, and hot/cold data archival. Wrote engineering
+tooling in Go and Python - a high-performance packet fan-out router for sensor
+feeds, UTM and kinematic track simulators for testing, and an offline terrain
+and imagery generation engine for air-gapped deployments.
+
+Skills: Go, Rust, Python, JavaScript, Kubernetes, PostgreSQL
+
+### Lead Programmer / Analyst - SUNY Polytechnic Institute (2016-2021)
+
+Built and maintained software and reports in Ellucian Banner to facilitate
+academic success and student retention. Architected and maintained campus-wide
+authentication systems and synchronizations. Provided data-driven solutions to
+drive institutional planning.
+
+Skills: Python, Oracle, Java, C#
+
+### Web Developer - SUNY Polytechnic Institute (2010-2016)
+
+Oversaw the upgrade of a legacy content management system between major versions
+of PHP and its eventual migration to WordPress. Served as the main point of
+escalation for website-related support requests. Managed web and database
+servers.
+
+Skills: PHP, MySQL, WordPress
+
+---
+
+## System Administrator
+
+I unblock users and developers with secure, sustainable, yet flexible solutions,
+with deep experience in compliance, scripting, and automation across on-prem and
+cloud infrastructure.
+
+### DevSecOps Engineer - AX Enterprize (2021-present)
+
+Administered the company's internal development and corporate IT environment,
+including GitHub Enterprise, Harbor and Maven artifact registries, Entra ID
+identity, Microsoft 365, and Cisco networking. Handled user lifecycle and access
+control, endpoint patching, monitoring, backups, and day-to-day support for
+business and engineering teams across on-prem and cloud infrastructure.
+Maintained the build, release, and deployment automation that moves software
+from developers to fielded sites.
+
+Skills: Entra ID, M365, Cisco, Docker, Kubernetes, CI/CD, CMMC
+
+### Lead System Administrator - SUNY Polytechnic Institute (2012-2021)
+
+Supported and maintained Linux infrastructure for business and academic
+departments. Managed a VMware environment and a NetApp network file server.
+Architected a solution for account and password synchronization across all
+college systems and maintained the Single Sign-On solution. Administered Google
+email and oversaw the migration from G Suite to Microsoft 365.
+
+Skills: VMware, Cisco, Oracle Linux, FERPA, HIPAA
+
+---
+
+## Cyber Security
+
+I offer secure solutions that minimize risk without standing in the way of
+progress or productivity, spanning secure pipelines, identity, and DoD/DHS
+compliance.
+
+### DevSecOps Engineer - AX Enterprize (2021-present)
+
+Owned the security posture of the product line and the internal development
+pipeline. Maintained a secure software CI/CD pipeline with scanning integrated
+throughout, triaging and remediating findings from Nessus, Snyk, OSCAP, and
+other tools across source, containers, and deployed systems. Designed the
+authentication and identity model, and led CMMC and DFARS compliance - including
+STIG-hardened deployments and the POA&M/ATO documentation behind fielded
+systems.
+
+Skills: CMMC, Nessus, Entra ID, OSCAP/STIG, CI/CD, DFARS
+
+### Lead System Administrator - SUNY Polytechnic Institute (2012-2021)
+
+Sole owner of central authentication for the entire university, where every
+student, faculty, and staff login flowed through one identity. Built and ran the
+account and password synchronization and Single Sign-On that thousands of users
+relied on daily. Conducted security audits, hardened and maintained secure
+servers across academic and business systems, and kept FERPA- and
+HIPAA-protected data secure.
+
+Skills: Single Sign-On, Active Directory, Linux, FERPA, HIPAA
+
+---
+
+## Contact
+
+Reach out via the contact details published on https://widrick.net/. Email and
+phone are intentionally not reproduced in machine-readable files to limit spam.

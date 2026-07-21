@@ -1,292 +1,284 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>
-      Widrick.net
-    </title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;700&amp;display=swap" rel="stylesheet">
+    <meta charset="utf-8">
+    <title>Daniel Widrick - Senior Software Engineer &amp; DevSecOps</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <meta name="description" content="Daniel Widrick - Senior Software Engineer and DevSecOps Engineer in Go, Rust, and Python, building real-time airspace-awareness systems for defense and UAS/UTM markets. SUNY Poly alum.">
+    <meta name="author" content="Daniel Widrick">
+    <meta name="theme-color" content="#0c1013">
+
+    <!--
+      Open Graph - controls the link-preview card when the URL is shared
+      (Discord, Slack, iMessage, LinkedIn, Signal, …). og:image is a flattened
+      raster card; bump ?v=N whenever the card art changes to bust the unfurl
+      caches (Discord/Slack/etc. cache aggressively). No contact data here.
+    -->
+    <meta property="og:type" content="profile">
+    <meta property="og:site_name" content="widrick.net">
+    <meta property="og:title" content="Daniel Widrick - Senior Software Engineer &amp; DevSecOps">
+    <meta property="og:description" content="Senior Software Engineer and DevSecOps Engineer in Go, Rust, and Python, building real-time airspace-awareness systems for defense and UAS/UTM markets.">
+    <meta property="og:url" content="https://widrick.net/">
+    <meta property="og:locale" content="en_US">
+    <meta property="profile:first_name" content="Daniel">
+    <meta property="profile:last_name" content="Widrick">
+    <meta property="og:image" content="https://widrick.net/og-card.png?v=1">
+    <meta property="og:image:secure_url" content="https://widrick.net/og-card.png?v=1">
+    <meta property="og:image:type" content="image/png">
+    <meta property="og:image:width" content="2400">
+    <meta property="og:image:height" content="1260">
+    <meta property="og:image:alt" content="Daniel Widrick - Senior Software Engineer and DevSecOps Engineer. widrick.net">
+
+    <!-- Twitter/X card - no @handles (no account, by choice); tags just drive rendering. -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Daniel Widrick - Senior Software Engineer &amp; DevSecOps">
+    <meta name="twitter:description" content="Senior Software Engineer and DevSecOps Engineer in Go, Rust, and Python, building real-time airspace-awareness systems for defense and UAS/UTM markets.">
+    <meta name="twitter:image" content="https://widrick.net/og-card.png?v=1">
+    <meta name="twitter:image:alt" content="Daniel Widrick - Senior Software Engineer and DevSecOps Engineer. widrick.net">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&amp;family=Geist+Mono:wght@400;500&amp;display=swap" rel="stylesheet">
     <link href="/style.css" rel="stylesheet">
     <script src="/portfolio.js" type="module"></script>
     <link href="/w-logo.svg" type="image/svg+xml" rel="icon">
+    <!--
+      schema.org Person markup: anchors this page as the canonical identity for
+      "Daniel Widrick" and disambiguates from namesakes (designer Daniel Widrig,
+      the student athlete, Widrick Auto Sales). Contact fields (telephone, email)
+      are intentionally OMITTED to avoid handing structured contact data to
+      scrapers/spam bots - the visible obfuscated phone + mailto still serve humans.
+      "sameAs" lists GitHub only: no LinkedIn/Twitter by choice (privacy/spam).
+    -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Daniel Widrick",
+      "url": "https://widrick.net",
+      "jobTitle": ["Senior Software Engineer", "DevSecOps Engineer"],
+      "description": "Senior Software Engineer and DevSecOps Engineer specializing in Go, Rust, and Python for real-time airspace-awareness systems in defense and UAS/UTM markets.",
+      "worksFor": {
+        "@type": "Organization",
+        "name": "AX Enterprize"
+      },
+      "alumniOf": {
+        "@type": "CollegeOrUniversity",
+        "name": "SUNY Polytechnic Institute"
+      },
+      "address": {
+        "@type": "PostalAddress",
+        "addressRegion": "NY",
+        "addressCountry": "US"
+      },
+      "knowsAbout": [
+        "Go", "Rust", "Python", "JavaScript",
+        "Kubernetes", "PostgreSQL", "Docker", "CI/CD",
+        "DevSecOps", "Cybersecurity", "CMMC", "DFARS", "OSCAP/STIG",
+        "Single Sign-On", "Identity and Access Management",
+        "Airspace Awareness", "UAS", "UTM", "Distributed Systems"
+      ],
+      "sameAs": [
+        "https://github.com/daniel-widrick"
+      ]
+    }
+    </script>
   </head>
   <body id="app">
-    <div id="headerCont">
-      <div id="namePlate">
-        <h1 id="nameText">
-          Daniel Widrick
-        </h1>
-      </div>
-      <div id="topNavCont" class="no-print">
-        <ul class="hNav">
-          <li class="hNav">
-            <a href="/portfolio/software" v-bind:class="{ 'selected' : displaySection === 'software'}">Software Developer</a>
-          </li>
-          <li class="hNav">
-            <a href="/portfolio/systems" v-bind:class="{ 'selected' : displaySection === 'systems'}">System Administrator</a>
-          </li>
-          <li class="hNav">
-            <a href="/portfolio/security" v-bind:class="{ 'selected' : displaySection === 'security'}">Cyber Security</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-    <div id="pageBodyCont">
-      <div id="leftBodyBar" class="bodyCol left">
-        <div class="sideLogoCont">
-          <img src="/w-logo.svg" class="sideLogo">
+    <main class="page">
+      <!-- H2 split diptych - lede left (7), constant credential rail right (5) -->
+      <header class="hero" style="--i: 0">
+        <div class="hero__lead">
+          <p class="kicker">Senior Software Engineer · DevSecOps Engineer</p>
+          <h1 class="hero__name">
+            <img class="hero__logo" src="/w-logo.svg" alt="" width="300" height="300">
+            <span>Daniel&nbsp;Widrick</span>
+          </h1>
+
+          <p class="hero__blurb" v-if="displaySection == 'software'">
+            I write simple software to solve complex problems. At work, you’ll find me writing scripts and programs to integrate aerospace-aware sensors with situational-awareness interfaces. At home, you’ll find me writing control logic for medical-grade pumps in an attempt to make the perfect mixed drink.
+          </p>
+          <p class="hero__blurb" v-if="displaySection == 'systems'">
+            I hate printers, but I’m here to help. I pride myself on unblocking users and developers with secure and sustainable yet flexible solutions. I’ve been deep in the world of compliance, and I don’t shy away from scripting and automation. Routers and firewalls don’t scare me. It’s the weekend rum and an exercise routine that keep the stress at bay.
+          </p>
+          <p class="hero__blurb" v-if="displaySection == 'security'">
+            I dabbled in the botnet scene when I was young and foolish. Now I wear a blue-team hat. The need for security is pervasive in the modern digital landscape. I offer secure solutions that minimize risk but don’t stand in the way of progress or productivity. I’ve survived a few attacks and always come out the other side basically unharmed… though some nights it’s hard to sleep while the enemy knocks at the door.
+          </p>
+
+          <!-- Persona segmented control - the primary content switch (server-routed) -->
+          <nav class="switch no-print" aria-label="Focus area">
+            <a class="switch__opt" href="/portfolio/software"
+               v-bind:class="{ 'is-active': displaySection === 'software' }"
+               v-bind:aria-current="displaySection === 'software' ? 'page' : false">Software</a>
+            <a class="switch__opt" href="/portfolio/systems"
+               v-bind:class="{ 'is-active': displaySection === 'systems' }"
+               v-bind:aria-current="displaySection === 'systems' ? 'page' : false">Systems</a>
+            <a class="switch__opt" href="/portfolio/security"
+               v-bind:class="{ 'is-active': displaySection === 'security' }"
+               v-bind:aria-current="displaySection === 'security' ? 'page' : false">Security</a>
+          </nav>
         </div>
-        <ul class="sideList">
-          <li>
-            <a href="https://widrick.net/">Widrick.net</a>
-          </li>
-          <li>
-            <a href="mailto:Daniel@Widrick.net">Daniel@widrick.net</a>
-          </li>
-          <li>
-            <a href="https://github.com/daniel-widrick">github.com/daniel-widrick</a>
-          </li>
-          <li>
-            <span class="onlyPrint">315</span> <span style="display: none;">324</span> <span class="onlyPrint">-527</span> <span style="display: none;">522</span> <span class="onlyPrint">-2825</span>
-          </li>
-        </ul>
-        <hr>
-        <div id="education">
-          BS Computer Science - SUNY POLY 2012
-        </div>
-        <hr>
-        <div id="domains">
-          <span class="clearanceHead">Domains</span><br>
-          Defense &middot; Homeland Security<br>
-          UAS / UTM &middot; Airspace Awareness
-        </div>
-        <hr>
-        <div id="clearance">
-          <span class="clearanceHead">Clearances</span><br>
-          U.S. Citizen<br>
-          Active Secret &middot; DoD<br>
-          Public Trust &middot; DHS
-        </div>
-        <hr>
-      </div>
-      <div id="rightBodyBar" class="bodyCol right">
-        <div id="softwareRightCont" v-if="displaySection == 'software'">
-          <div class="aboutMeBlurb">
-            I write simple software to solve complex problems.<br>
-            <br>
-            At work, you'll find me writing scripts and programs to integrate aerospace-aware sensors with situational awareness interfaces. At home, you'll find me writing control logic for medical-grade pumps in an attempt to make the perfect mixed drink.
-          </div>
-          <div class="experienceBox">
-            <div class="experienceBoxCol left">
-              2021 - Present
+
+        <aside class="facts" aria-label="At a glance">
+          <dl class="facts__list">
+            <div class="facts__row">
+              <dt>Based</dt>
+              <dd>New York · United States</dd>
             </div>
-            <div class="experienceBoxCol right">
-              <h3>
-                Senior Software Engineer - AX Enterprize
-              </h3>
-              <div class="experienceBoxResp">
-                Senior engineer on SAFIRE/CLUE, a real-time airspace-awareness platform integrating aerospace sensors for DoD and commercial UAS markets. Designed and implemented core backend services in Go: authentication and SSO, the track storage and replay pipeline, and hot/cold data archival. Also wrote the engineering tooling in Go and Python: a high-performance packet fan-out router for sensor feeds, UTM and kinematic track simulators for testing, and an offline terrain and imagery generation engine for air-gapped deployments.
-              </div>
+            <div class="facts__row">
+              <dt>Education</dt>
+              <dd>BS Computer Science<br>SUNY Poly<span class="no-print">technic Institute</span> · 2012</dd>
             </div>
-            <div class="experienceBoxSkills">
-              <ul class="skillList hNav">
-                <li class="skillItem skillItemPython">Python
-                </li>
-                <li class="skillItem skillItemRust">Rust
-                </li>
-                <li class="skillItem skillItemJavascript">JavaScript
-                </li>
-                <li class="skillItem skillItemGo">Go
-                </li>
-                <li class="skillItem skillItemKubernetes">Kubernetes
-                </li>
-                <li class="skillItem skillItemPostgreSQL">PostgreSQL
-                </li>
+            <div class="facts__row">
+              <dt>Domains</dt>
+              <dd>Defense · Homeland Security<br>UAS / UTM · Airspace Awareness</dd>
+            </div>
+            <div class="facts__row">
+              <dt>Clearances</dt>
+              <dd>U.S. Citizen<br>Active Secret · DoD<br>Public Trust · DHS</dd>
+            </div>
+            <div class="facts__row">
+              <dt>Contact</dt>
+              <dd>
+                <a href="mailto:Daniel@Widrick.net">Daniel@widrick.net</a><br>
+                <a href="https://github.com/daniel-widrick">github.com/daniel-widrick</a>
+                <span class="facts__phone onlyPrint">315-527-2825</span>
+                <span aria-hidden="true" style="display:none">324 522</span>
+              </dd>
+            </div>
+          </dl>
+        </aside>
+      </header>
+
+      <!-- F4 step sequence - the career timeline, swapped per persona -->
+      <section class="work" aria-label="Experience" style="--i: 1">
+        <div class="work__head">
+          <span class="work__tick" aria-hidden="true"></span>
+          <h2 class="work__title">Experience</h2>
+        </div>
+
+        <!-- SOFTWARE -->
+        <ol class="timeline" v-if="displaySection == 'software'">
+          <li class="entry">
+            <p class="entry__period">2021 - Present</p>
+            <div class="entry__body">
+              <h3 class="entry__role">Senior Software Engineer <span class="entry__org">AX Enterprize</span></h3>
+              <p class="entry__desc">Senior engineer on SAFIRE/CLUE, a real-time airspace-awareness platform integrating aerospace sensors for DoD and commercial UAS markets. Designed and implemented core backend services in Go: authentication and SSO, the track storage and replay pipeline, and hot/cold data archival. Also wrote the engineering tooling in Go and Python - a high-performance packet fan-out router for sensor feeds, UTM and kinematic track simulators for testing, and an offline terrain and imagery generation engine for air-gapped deployments.</p>
+              <ul class="tags">
+                <li class="tag">Go</li>
+                <li class="tag">Rust</li>
+                <li class="tag">Python</li>
+                <li class="tag">JavaScript</li>
+                <li class="tag">Kubernetes</li>
+                <li class="tag">PostgreSQL</li>
               </ul>
             </div>
-          </div>
-          <div class="experienceBox">
-            <div class="experienceBoxCol left">
-              2016 - 2021
-            </div>
-            <div class="experienceBoxCol right">
-              <h3>
-                Lead Programmer / Analyst - SUNY Poly<span class="no-print">technic Institute</span>
-              </h3>
-              <div class="experienceBoxResp">
-                Built and maintained software and reports in Ellucian Banner to facilitate academic success and student retention. Architected and maintained campus-wide authentication systems and synchronizations. Provided data-driven solutions to drive institutional planning.
-              </div>
-            </div>
-            <div class="experienceBoxSkills">
-              <ul class="skillList hNav">
-                <li class="skillItem skillItemPython">Python
-                </li>
-                <li class="skillItem skillItemOracle">Oracle
-                </li>
-                <li class="skillItem skillItemJava">Java
-                </li>
-                <li class="skillItem skillItemCSharp">C#
-                </li>
+          </li>
+          <li class="entry">
+            <p class="entry__period">2016 - 2021</p>
+            <div class="entry__body">
+              <h3 class="entry__role">Lead Programmer / Analyst <span class="entry__org">SUNY Poly<span class="no-print">technic Institute</span></span></h3>
+              <p class="entry__desc">Built and maintained software and reports in Ellucian Banner to facilitate academic success and student retention. Architected and maintained campus-wide authentication systems and synchronizations. Provided data-driven solutions to drive institutional planning.</p>
+              <ul class="tags">
+                <li class="tag">Python</li>
+                <li class="tag">Oracle</li>
+                <li class="tag">Java</li>
+                <li class="tag">C#</li>
               </ul>
             </div>
-          </div>
-          <div class="experienceBox">
-            <div class="experienceBoxCol left">
-              2010 - 2016
-            </div>
-            <div class="experienceBoxCol right">
-              <h3>
-                Web Developer - SUNY Poly<span class="no-print">technic Institute</span>
-              </h3>
-              <div class="experienceBoxResp">
-                Oversaw upgrade of legacy content management system between major versions of PHP and eventual migration to WordPress. Served as main point of escalation for website related support requests. Managed web and database servers.
-              </div>
-            </div>
-            <div class="experienceBoxSkills">
-              <ul class="skillList hNav">
-                <li class="skillItem skillItemPHP">PHP
-                </li>
-                <li class="skillItem skillItemMySQL">MySQL
-                </li>
-                <li class="skillItem skillItemWordpress">WordPress
-                </li>
+          </li>
+          <li class="entry">
+            <p class="entry__period">2010 - 2016</p>
+            <div class="entry__body">
+              <h3 class="entry__role">Web Developer <span class="entry__org">SUNY Poly<span class="no-print">technic Institute</span></span></h3>
+              <p class="entry__desc">Oversaw the upgrade of a legacy content management system between major versions of PHP and its eventual migration to WordPress. Served as the main point of escalation for website-related support requests. Managed web and database servers.</p>
+              <ul class="tags">
+                <li class="tag">PHP</li>
+                <li class="tag">MySQL</li>
+                <li class="tag">WordPress</li>
               </ul>
             </div>
-          </div>
-        </div>
-        <div id="systemsRightCont" v-if="displaySection == 'systems'">
-          <div class="aboutMeBlurb">
-            I hate printers, but I'm here to help.<br>
-            <br>
-            I pride myself on unblocking users and developers with secure and sustainable yet flexible solutions. I've been deep in the world of compliance, and I don't shy away from scripting and automation. Routers and firewalls don't scare me. It's the weekend rum and an exercise routine that keeps the stress at bay for me.
-          </div>
-          <div class="experienceBox">
-            <div class="experienceBoxCol left">
-              2021-present
-            </div>
-            <div class="experienceBoxCol right">
-              <h3>
-                DevSecOps Engineer - AX Enterprize
-              </h3>
-              <div class="experienceBoxResp">
-                Administered the company's internal development and corporate IT environment, including GitHub Enterprise, Harbor and Maven artifact registries, Entra ID identity, Microsoft 365, and Cisco networking. Handled user lifecycle and access control, endpoint patching, monitoring, backups, and day-to-day support for business and engineering teams across on-prem and cloud infrastructure. Also maintained the build, release, and deployment automation that moves software from developers to fielded sites.
-              </div>
-            </div>
-            <div class="experienceBoxSkills">
-              <ul class="skillList hNav">
-                <li class="skillItem skillItemEntra">Entra ID
-                </li>
-                <li class="skillItem skillItemM365">M365
-                </li>
-                <li class="skillItem skillItemCisco">Cisco
-                </li>
-                <li class="skillItem skillItemDocker">Docker
-                </li>
-                <li class="skillItem skillItemKubernetes">Kubernetes
-                </li>
-                <li class="skillItem skillItemCICD">CI/CD
-                </li>
-                <li class="skillItem skillItemCMMC">CMMC
-                </li>
+          </li>
+        </ol>
+
+        <!-- SYSTEMS -->
+        <ol class="timeline" v-if="displaySection == 'systems'">
+          <li class="entry">
+            <p class="entry__period">2021 - Present</p>
+            <div class="entry__body">
+              <h3 class="entry__role">DevSecOps Engineer <span class="entry__org">AX Enterprize</span></h3>
+              <p class="entry__desc">Administered the company’s internal development and corporate IT environment, including GitHub Enterprise, Harbor and Maven artifact registries, Entra ID identity, Microsoft 365, and Cisco networking. Handled user lifecycle and access control, endpoint patching, monitoring, backups, and day-to-day support for business and engineering teams across on-prem and cloud infrastructure. Also maintained the build, release, and deployment automation that moves software from developers to fielded sites.</p>
+              <ul class="tags">
+                <li class="tag">Entra ID</li>
+                <li class="tag">M365</li>
+                <li class="tag">Cisco</li>
+                <li class="tag">Docker</li>
+                <li class="tag">Kubernetes</li>
+                <li class="tag">CI/CD</li>
+                <li class="tag">CMMC</li>
               </ul>
             </div>
-          </div>
-          <div class="experienceBox">
-            <div class="experienceBoxCol left">
-              2012-2021
-            </div>
-            <div class="experienceBoxCol right">
-              <h3>
-                Lead System Administrator - SUNY Poly<span class="no-print">technic Institute</span>
-              </h3>
-              <div class="experienceBoxResp">
-                Supported and maintained Linux infrastructure for business and academic departments. Managed VMware environment and NetApp network file server. Architected solution for account/password sync across all college systems and maintained Single Sign On solution. Administered Google email and oversaw migration from G Suite to Microsoft 365.
-              </div>
-            </div>
-            <div class="experienceBoxSkills">
-              <ul class="skillList hNav">
-                <li class="skillItem skillItemVMWare">VMware
-                </li>
-                <li class="skillItem skillItemCisco">Cisco
-                </li>
-                <li class="skillItem skillItemOracleLinux">Oracle Linux
-                </li>
-                <li class="skillItem skillItemFERPA">FERPA
-                </li>
-                <li class="skillItem skillItemHIPAA">HIPAA
-                </li>
+          </li>
+          <li class="entry">
+            <p class="entry__period">2012 - 2021</p>
+            <div class="entry__body">
+              <h3 class="entry__role">Lead System Administrator <span class="entry__org">SUNY Poly<span class="no-print">technic Institute</span></span></h3>
+              <p class="entry__desc">Supported and maintained Linux infrastructure for business and academic departments. Managed a VMware environment and a NetApp network file server. Architected a solution for account and password synchronization across all college systems and maintained the Single Sign-On solution. Administered Google email and oversaw the migration from G Suite to Microsoft 365.</p>
+              <ul class="tags">
+                <li class="tag">VMware</li>
+                <li class="tag">Cisco</li>
+                <li class="tag">Oracle Linux</li>
+                <li class="tag">FERPA</li>
+                <li class="tag">HIPAA</li>
               </ul>
             </div>
-          </div>
-        </div>
-        <div id="securityCont" v-if="displaySection == 'security'">
-          <div class="aboutMeBlurb">
-            I dabbled in the botnet scene when I was young and foolish. Now I wear a blue team hat.<br>
-            <br>
-            The need for security is pervasive in the modern digital landscape. I'm here to offer secure solutions that minimize risk but also don't stand in the way of progress or productivity. I've survived a few attacks and always come out the other side basically unharmed... Some nights, it can be hard to sleep while the enemy knocks at the door.
-          </div>
-          <div class="experienceBox">
-            <div class="experienceBoxCol left">
-              2021-present
+          </li>
+        </ol>
+
+        <!-- SECURITY -->
+        <ol class="timeline" v-if="displaySection == 'security'">
+          <li class="entry">
+            <p class="entry__period">2021 - Present</p>
+            <div class="entry__body">
+              <h3 class="entry__role">DevSecOps Engineer <span class="entry__org">AX Enterprize</span></h3>
+              <p class="entry__desc">Owned the security posture of the product line and the internal development pipeline. Maintained a secure software CI/CD pipeline with scanning integrated throughout, triaging and remediating findings from Nessus, Snyk, OSCAP, and other tools across source, containers, and deployed systems. Designed the authentication and identity model, and led CMMC and DFARS compliance - including STIG-hardened deployments and the POA&amp;M/ATO documentation behind fielded systems.</p>
+              <ul class="tags">
+                <li class="tag">CMMC</li>
+                <li class="tag">Nessus</li>
+                <li class="tag">Entra ID</li>
+                <li class="tag">OSCAP/STIG</li>
+                <li class="tag">CI/CD</li>
+                <li class="tag">DFARS</li>
+              </ul>
             </div>
-            <div class="experienceBoxCol right">
-              <h3>
-                DevSecOps Engineer - AX Enterprize
-              </h3>
-              <div class="experienceBoxResp">
-                Owned the security posture of the product line and the internal development pipeline. Maintained a secure software CI/CD pipeline with scanning integrated throughout, triaging and remediating findings from Nessus, Snyk, OSCAP, and other tools across source, containers, and deployed systems. Designed the authentication and identity model, and led CMMC and DFARS compliance, including STIG-hardened deployments and the POA&amp;M/ATO documentation behind fielded systems.
-              </div>
-              <div class="experienceBoxSkills">
-                <ul class="skillList hNav">
-                  <li class="skillItem skillItemCMMC">CMMC
-                  </li>
-                  <li class="skillItem skillItemNessus">Nessus
-                  </li>
-                  <li class="skillItem skillItemEntra">Entra ID
-                  </li>
-                  <li class="skillItem skillItemOSCAP">OSCAP/STIG
-                  </li>
-                  <li class="skillItem skillItemCICD">CI/CD
-                  </li>
-                  <li class="skillItem skillItemDFARS">DFARS
-                  </li>
-                </ul>
-              </div>
+          </li>
+          <li class="entry">
+            <p class="entry__period">2012 - 2021</p>
+            <div class="entry__body">
+              <h3 class="entry__role">Lead System Administrator <span class="entry__org">SUNY Poly<span class="no-print">technic Institute</span></span></h3>
+              <p class="entry__desc">Sole owner of central authentication for the entire university, where every student, faculty, and staff login flowed through one identity. Built and ran the account and password synchronization and Single Sign-On that thousands of users relied on daily. Conducted security audits, hardened and maintained secure servers across academic and business systems, and kept FERPA- and HIPAA-protected data secure.</p>
+              <ul class="tags">
+                <li class="tag">Single Sign-On</li>
+                <li class="tag">Active Directory</li>
+                <li class="tag">Linux</li>
+                <li class="tag">FERPA</li>
+                <li class="tag">HIPAA</li>
+              </ul>
             </div>
-          </div>
-          <div class="experienceBox">
-            <div class="experienceBoxCol left">
-              2012-2021
-            </div>
-            <div class="experienceBoxCol right">
-              <h3>
-                Lead System Administrator - SUNY Poly<span class="no-print">technic Institute</span>
-              </h3>
-              <div class="experienceBoxResp">
-                Sole owner of central authentication for the entire university, where every student, faculty, and staff login flowed through one identity. Built and ran the account and password synchronization and Single Sign On that thousands of users relied on daily. Conducted security audits, hardened and maintained secure servers across academic and business systems, and kept FERPA- and HIPAA-protected data secure.
-              </div>
-              <div class="experienceBoxSkills">
-                <ul class="skillList hNav">
-                  <li class="skillItem skillItemSSO">Single Sign On
-                  </li>
-                  <li class="skillItem skillItemAD">Active Directory
-                  </li>
-                  <li class="skillItem skillItemLinux">Linux
-                  </li>
-                  <li class="skillItem skillItemFERPA">FERPA
-                  </li>
-                  <li class="skillItem skillItemHIPAA">HIPAA
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <hr class="no-print">
-    <div id="footerCont" class="no-print">
-      Powered by Go and Vue... Some printers may have been harmed...
-    </div>
+          </li>
+        </ol>
+      </section>
+    </main>
+
+    <!-- Ft2 inline single line -->
+    <footer class="foot no-print">
+      <p class="foot__line">
+        <span class="foot__mark">Daniel Widrick</span>
+        <span class="foot__sep" aria-hidden="true">·</span>
+        Built with Go and Vue
+        <span class="foot__sep" aria-hidden="true">·</span>
+        Some printers may have been harmed
+      </p>
+    </footer>
   </body>
 </html>

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<!--
+  Source for /og-card.png - the Open Graph / social share card (og:image).
+  This file is NOT served as part of the site; it's the design source, rendered
+  to a flat PNG so the deployed card has no runtime font/asset dependency.
+
+  Regenerate (from the repo root), producing a 2400x1260 @2x PNG:
+
+    CHROME="/Applications/Google Chrome.app/Contents/MacOS/Google Chrome"   # or your chrome/chromium
+    "$CHROME" --headless=new --disable-gpu --hide-scrollbars \
+      --window-size=1200,630 --force-device-scale-factor=2 \
+      --virtual-time-budget=6000 \
+      --screenshot=og-card.png "file://$PWD/assets/og-card.html"
+
+  If you change the card art, bump the ?v=N on the og:image / twitter:image
+  URLs in index.html so Discord/Slack/etc. re-fetch instead of serving a stale
+  cached copy. Palette + fonts mirror tokens.css / the site design system.
+-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&family=Geist+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --paper:  oklch(17% 0.010 240);
+    --paper-2:oklch(21% 0.011 240);
+    --ink:    oklch(94% 0.006 240);
+    --muted:  oklch(76% 0.007 240);
+    --neutral:oklch(62% 0.008 240);
+    --rule:   oklch(31% 0.010 240);
+    --accent: oklch(70% 0.185 47);
+    --blue:   oklch(80% 0.120 215);
+    --sans: "Geist", system-ui, sans-serif;
+    --mono: "Geist Mono", ui-monospace, monospace;
+  }
+  * { box-sizing: border-box; margin: 0; }
+  html, body { width: 1200px; height: 630px; overflow: hidden; }
+  body {
+    background: var(--paper);
+    color: var(--ink);
+    font-family: var(--sans);
+    padding: 84px 88px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+  }
+  /* faint oversized watermark logo, bottom-right */
+  .watermark {
+    position: absolute;
+    right: -70px;
+    bottom: -90px;
+    width: 460px;
+    height: 460px;
+    opacity: 0.06;
+  }
+  .top { display: flex; flex-direction: column; gap: 30px; }
+  .namerow { display: flex; align-items: center; gap: 30px; }
+  .logo { width: 116px; height: 116px; display: block; flex: none; }
+  .name {
+    font-weight: 700;
+    font-size: 96px;
+    letter-spacing: -0.04em;
+    line-height: 1;
+  }
+  .kicker {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    font-family: var(--mono);
+    font-weight: 500;
+    font-size: 29px;
+    letter-spacing: 0.01em;
+    color: var(--accent);
+  }
+  .kicker::before {
+    content: "";
+    width: 16px; height: 16px;
+    border-radius: 3px;
+    background: var(--accent);
+  }
+  .desc { display: flex; flex-direction: column; gap: 20px; }
+  .desc__line {
+    font-size: 33px;
+    line-height: 1.3;
+    color: var(--muted);
+    white-space: nowrap;
+  }
+  .desc__line .hl { color: var(--ink); }
+  .skills {
+    font-size: 30px;
+    letter-spacing: 0.01em;
+    color: var(--ink);
+  }
+  .skills .sep { color: var(--accent); padding: 0 6px; }
+  .foot {
+    display: flex;
+    align-items: center;
+    gap: 22px;
+    padding-top: 30px;
+    border-top: 1px solid var(--rule);
+    font-family: var(--mono);
+    font-size: 27px;
+  }
+  .foot .site { color: var(--blue); }
+  .foot .sep { color: var(--rule); }
+  .foot .gh { color: var(--neutral); }
+</style>
+</head>
+<body>
+  <img class="watermark" src="../w-logo.svg" alt="">
+  <div class="top">
+    <div class="namerow">
+      <img class="logo" src="../w-logo.svg" alt="">
+      <div class="name">Daniel Widrick</div>
+    </div>
+    <div class="kicker">Senior Software Engineer · DevSecOps Engineer</div>
+  </div>
+  <div class="desc">
+    <div class="desc__line">Real-time <span class="hl">airspace-awareness</span> systems for defense &amp; UAS/UTM.</div>
+    <div class="skills">Go<span class="sep">·</span>Python<span class="sep">·</span>Kubernetes<span class="sep">·</span>CI/CD<span class="sep">·</span>CMMC</div>
+  </div>
+  <div class="foot">
+    <span class="site">widrick.net</span>
+    <span class="sep">·</span>
+    <span class="gh">github.com/daniel-widrick</span>
+  </div>
+</body>
+</html>
