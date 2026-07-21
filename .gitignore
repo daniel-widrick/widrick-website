@@ -1,0 +1,2 @@
+# Go build output (module is named "portfolio", so `go build` drops a binary here)
+/portfolio

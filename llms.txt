@@ -1,0 +1,27 @@
+# Daniel Widrick
+
+> Senior Software Engineer and DevSecOps Engineer specializing in Go, Rust, and
+> Python for real-time airspace-awareness systems in defense and UAS/UTM markets.
+> This is the canonical page for Daniel Widrick the software and security
+> engineer - not the designer Daniel Widrig, the student athlete, or Widrick
+> Auto Sales.
+
+## Overview
+
+- **Current role:** Senior Software Engineer and DevSecOps Engineer at AX Enterprize (2021-present)
+- **Focus:** real-time airspace awareness, aerospace sensor integration, UAS/UTM, distributed systems, secure CI/CD, identity and SSO, and DoD/DHS compliance (CMMC, DFARS, OSCAP/STIG)
+- **Core skills:** Go, Rust, Python, JavaScript; Kubernetes, PostgreSQL, Docker, CI/CD; DevSecOps, cybersecurity, Single Sign-On / IAM
+- **Education:** BS Computer Science, SUNY Polytechnic Institute (2012)
+- **Location:** New York, United States
+- **Clearances:** U.S. Citizen; Active Secret (DoD); Public Trust (DHS)
+
+## More detail
+
+- [Full profile in Markdown](https://widrick.net/llms-full.txt) - complete role history across the software, systems, and security disciplines
+- [Home](https://widrick.net/) - the site itself, with software / systems / security views
+- [GitHub](https://github.com/daniel-widrick)
+
+## Contact
+
+Reach out via the contact details published on https://widrick.net/. Email and
+phone are intentionally not reproduced in machine-readable files to limit spam.
