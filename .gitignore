@@ -1,2 +1,14 @@
 # Go build output (module is named "portfolio", so `go build` drops a binary here)
 /portfolio
+
+# Business cards: design sources, their rendered PNGs, and the brand art they
+# pull in. These are local print/hand-out files, not site assets - nothing here
+# is served by server.go or copied into the image by the Dockerfile.
+#
+# NOTE: og-card.html / og-card.png are deliberately NOT ignored - the OG share
+# card is a real site asset referenced by index.html.
+/assets/business-card*.html
+/assets/business-card*.png
+/assets/ax-logo.png
+/assets/ax-logo-wide.svg
+/assets/stamp-dpi.py
